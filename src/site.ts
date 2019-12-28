@@ -4,3 +4,6 @@ import U from "./userscript";
 
 export const NAME = U.sitename;
 export const HOSTNAME = U.hostname;
+
+export const SELECTOR_HEADING = "body h1";
+export const SELECTOR_MAIN = "body div";
