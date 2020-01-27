@@ -5,6 +5,7 @@ import {
     DEFAULT_METADATA_SCHEMA,
 } from "userscripter/build";
 
+import MANIFEST from "./manifest";
 import METADATA from "./metadata";
 import * as CONFIG from "./src/config";
 import * as SITE from "./src/site";
@@ -20,6 +21,7 @@ export default createWebpackConfig({
         }),
         sassVariables: { CONFIG, SITE, T },
     },
+    manifest: MANIFEST,
     metadata: METADATA,
     metadataSchema: DEFAULT_METADATA_SCHEMA,
     env: process.env,
