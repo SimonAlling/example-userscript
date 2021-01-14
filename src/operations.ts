@@ -1,5 +1,5 @@
 import { log } from "userscripter";
-import { ALWAYS } from "userscripter/lib/environment";
+import { ALWAYS, DOMCONTENTLOADED } from "userscripter/lib/environment";
 import { Operation, operation } from "userscripter/lib/operations";
 
 import { P, Preferences } from "~src/preferences";
@@ -47,6 +47,7 @@ const OPERATIONS: ReadonlyArray<Operation<any>> = [
             const form = menuGenerator(P);
             document.body.appendChild(form);
         },
+        deferUntil: DOMCONTENTLOADED,
     }),
 ];
 
