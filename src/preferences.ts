@@ -4,7 +4,7 @@ import {
     PreferenceManager,
     StringPreference,
 } from "ts-preferences";
-import { loggingResponseHandler } from "userscripter/lib/preferences";
+import { loggingResponseHandler } from "userscripter/run-time/preferences";
 
 import U from "~src/userscript";
 import T from "~src/text";

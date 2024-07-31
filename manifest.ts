@@ -1,7 +1,7 @@
 import {
     BuildConfig,
     distFileName,
-} from "userscripter/build";
+} from "userscripter/build-time";
 import Manifest from "webextension-manifest";
 
 import U from "./src/userscript";
