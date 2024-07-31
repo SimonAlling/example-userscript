@@ -1,6 +1,6 @@
 import { log } from "userscripter";
-import { ALWAYS, DOMCONTENTLOADED } from "userscripter/lib/environment";
-import { Operation, operation } from "userscripter/lib/operations";
+import { ALWAYS, DOMCONTENTLOADED } from "userscripter/run-time/environment";
+import { Operation, operation } from "userscripter/run-time/operations";
 
 import { P, Preferences } from "~src/preferences";
 import { menuGenerator } from "~src/preferences-menu";
